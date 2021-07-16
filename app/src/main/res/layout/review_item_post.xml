@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--tools:이 레이아웃에만 적용되고 어플에 시작될 때는 반영이 안됨. 참고용 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="@string/itemPostTitle"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#A8A8A8">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contentsTextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/contentsTextViewString"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/createdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|end"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="@string/dateString" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    android:layout_gravity="center">
+
+    <!--상단 텍스트-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="부작용 검색"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp" />
+            <ImageButton
+                android:id="@+id/gohome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                app:srcCompat="@drawable/ic_home_black_24dp">
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="어린이 주의"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/song_button2"
+        android:onClick="child"/>
+
+    <Button
+        android:id="@+id/senior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/child"
+        android:layout_marginTop="30dp"
+        android:text="노인 주의"
+        android:background="@drawable/song_button5"
+
+        android:onClick="senior"/>
+
+    <Button
+        android:id="@+id/pregnant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/senior"
+        android:layout_marginTop="30dp"
+        android:text="임부 금기"
+        android:background="@drawable/song_button8"
+        android:onClick="pregnant"/>
+    </LinearLayout>
+</LinearLayout>

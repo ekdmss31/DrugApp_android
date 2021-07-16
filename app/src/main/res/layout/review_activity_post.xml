@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <ImageButton
+            android:id="@+id/gohome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_home_black_24dp"
+            android:background="#00ffffff"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:text="@string/stringtitle"
+        android:textSize="60sp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--tools:이 레이아웃에만 적용되고 어플에 시작될 때는 반영이 안됨. 참고용 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="@string/itemPostTitle" />
+
+                <TextView
+                    android:id="@+id/createdTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|end"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded"
+                    tools:text="@string/dateString" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#A8A8A8"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/contentsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/contentsTextViewString"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="right"
+                android:text="@string/texttext"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/modify2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modify"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_state"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/delete2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/deletString"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_state"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

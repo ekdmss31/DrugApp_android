@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecomMainActivity"
+    android:orientation="vertical">
+
+    <!--상단 텍스트-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="증상으로 약 추천"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp" />
+            <ImageButton
+                android:id="@+id/gohome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                app:srcCompat="@drawable/ic_home_black_24dp">
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/recom_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/song_button1"
+            android:text="근육통"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/recom_btn2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/song_button2"
+            android:text="체력저하 . 육체피로"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/recom_btn3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="치주질환(치료)"
+            android:background="@drawable/song_button3"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/recom_btn4"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:text="식욕감퇴 . 소화불량"
+            android:background="@drawable/song_button4"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/recom_btn5"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:text="고혈압"
+            android:background="@drawable/song_button5"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/recom_btn6"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:text="감기(콧물, 코막힘, 기침, 발열)"
+            android:background="@drawable/song_button6"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/recom_btn7"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:text="통증(두통, 치통, 인후통, 생리통)"
+            android:background="@drawable/song_button7"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/recom_btn8"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:text="화상 . 외상"
+            android:background="@drawable/song_button8"
+            android:textSize="17sp"/>
+    </LinearLayout>
+</LinearLayout>

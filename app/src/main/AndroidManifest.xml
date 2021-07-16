@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidlogin">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_drug_icon"
+        android:label="약꾹"
+        android:roundIcon="@drawable/ic_drug_icon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        tools:targetApi="m"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:label">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDd9ZoPqAJSM9VH0Sbun-MKeS2JMl--wBs"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            tools:replace="android:value"
+            android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="SignupActivity" >
+        </activity>
+        <activity
+            android:name=".FindpwActivity"
+            android:label="FindpwActivity" >
+        </activity>
+        <activity
+            android:name=".FindIdActivity"
+            android:label="FindIdActivity" >
+        </activity>
+        <activity
+            android:name=".NameMainActivity">
+        </activity>
+        <activity
+            android:name=".LookupActivity">
+        </activity>
+        <activity
+            android:name=".MapMainActivity">
+        </activity>
+        <activity android:name=".ReviewMainActivity">
+        </activity>
+        <activity android:name=".ReviewWriteActivity">
+        </activity>
+        <activity android:name=".ReviewActivityPost">
+        </activity>
+        <activity android:name=".FormSearchActivity"/>
+        <activity android:name=".FormMainActivity"/>
+        <activity android:name=".RecomMainActivity"/>
+
+        <activity android:name=".SetAlarm"></activity>
+        <activity android:name=".ModifyAlarm"></activity>
+        <receiver
+            android:name=".AlarmReceiver" />
+
+        <activity
+            android:name=".SideEffectMainActivity">
+        </activity>
+        <activity
+            android:name=".SideEffectChild">
+        </activity>
+        <activity
+            android:name=".SideEffectPregnant">
+        </activity>
+        <activity
+            android:name=".SideEffectSenior">
+        </activity>
+
+        <activity android:name=".RecomSearchActivity" />
+
+        <activity
+            android:name=".MenuActivity"
+            android:label="MenuActivity" >
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

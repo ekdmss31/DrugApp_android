@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/detailText"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                tools:text="이미지"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                />
+            <TextView
+                android:id="@+id/stringName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/textview3String" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/textViewString" />
+
+            <TextView
+                android:id="@+id/detailStr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/textViewstr" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

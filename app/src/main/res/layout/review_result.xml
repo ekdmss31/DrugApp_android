@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/titleEditTextString"
+                android:inputType="textPersonName"
+                android:shadowColor="#FFFFFF"
+                android:textColorHighlight="#FFA3A3"
+                android:textColorLink="#FF9C86" />
+
+            <EditText
+                android:id="@+id/contentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/contentEditTextString"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:shadowColor="#FFFFFF"
+                android:textColorHighlight="#9496FB"
+                android:textColorLink="#5C99CF" />
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="393dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="337dp"
+                android:gravity="center|center_vertical"
+                android:text="@string/ok" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/review_view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>
